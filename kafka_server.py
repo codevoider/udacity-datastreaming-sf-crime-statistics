@@ -1,16 +1,18 @@
 import producer_server
 
+BROKER_URL = "PLAINTEXT://localhost:9092"
+
 
 def run_kafka_server():
-	# TODO get the json file path
-    input_file = ""
 
-    # TODO fill in blanks
+    input_file = "police-department-calls-for-service.json"
+    topic_name = "com.udacity.phuri.kafka.sfcrime.callsforservice"
+
     producer = producer_server.ProducerServer(
         input_file=input_file,
-        topic="",
-        bootstrap_servers="",
-        client_id=""
+        topic=topic_name,
+        bootstrap_servers=BROKER_URL,
+        client_id=f"{topic_name}_producer"
     )
 
     return producer

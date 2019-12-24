@@ -14,7 +14,6 @@ class ProducerServer(KafkaProducer):
         with open(self.input_file) as f:
             for line in f:
                 message = self.dict_to_binary(line)
-                # TODO send the correct data
                 self.send(self.topic, message)
                 time.sleep(1)
 

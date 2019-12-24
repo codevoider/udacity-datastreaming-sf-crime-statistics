@@ -49,8 +49,8 @@ def run_spark_job(spark):
 
     # select original_crime_type_name and disposition
     distinct_table = service_table.select(psf.to_timestamp(psf.col("call_date_time")).alias("call_date_time"),
-                                          psf.col("original_crime_type_name"),
-                                          psf.col("disposition"))
+                                          service_table.original_crime_type_name,
+                                          service_table.disposition)
 
     # count the number of original crime type
     agg_df = distinct_table.select(distinct_table.call_date_time,
@@ -64,7 +64,7 @@ def run_spark_job(spark):
     ) \
         .count()
 
-    # TODO Q1. Submit a screen shot of a batch ingestion of the aggregation
+    # TODO Q1. Submit a screenshot of a batch ingestion of the aggregation
     # TODO write output stream
     query = agg_df \
         .writeStream \

@@ -3,8 +3,10 @@ as part of Udacity Data Streaming nanodegree
 
 ## Environment
 - Java JDK 1.8
-- Scala
-- Spark (using 2.4.4)
+- Scala 2.13.1
+- Spark 2.4.4
+- Kafka
+- Python 3.7.5
 
 For Python libraries, refer to requirement.txt.
 

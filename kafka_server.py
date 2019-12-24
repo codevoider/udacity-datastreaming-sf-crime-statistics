@@ -1,6 +1,6 @@
 import producer_server
 
-BROKER_URL = "PLAINTEXT://localhost:9092"
+BROKER_URL = "localhost:9092"
 
 
 def run_kafka_server():

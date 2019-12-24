@@ -13,11 +13,11 @@ For Python libraries, refer to requirement.txt.
 
 #### 1.Start Zookeeper.
 
-`/usr/bin/zookeeper-server-start config/zookeeper.properties`
+`zookeeper-server-start config/zookeeper.properties`
 
 #### 2.Start Kafka server.
 
-`/usr/bin/kafka-server-start config/server.properties`
+`kafka-server-start config/server.properties`
 
 #### 3.Start Kafka Producer.
 
@@ -30,6 +30,8 @@ For Python libraries, refer to requirement.txt.
 #### Trigger spark job
 
 `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.4 --master local[*] data_stream.py`
+*** Note that 2.4.4 is the version of spark installed.
+
 
 ## Q&A
 

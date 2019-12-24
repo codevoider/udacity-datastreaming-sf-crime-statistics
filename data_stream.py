@@ -48,7 +48,7 @@ def run_spark_job(spark):
         .select("cfs.*")
 
     # select original_crime_type_name and disposition
-    distinct_table = service_table.select(psf.to_timestamp(psf.col("call_date_time")).alias("call_date_time"),
+    distinct_table = service_table.select(psf.to_timestamp(service_table.call_date_time).alias("call_date_time"),
                                           service_table.original_crime_type_name,
                                           service_table.disposition)
 
@@ -64,8 +64,8 @@ def run_spark_job(spark):
     ) \
         .count()
 
-    # TODO Q1. Submit a screenshot of a batch ingestion of the aggregation
-    # TODO write output stream
+    # Q1. Submit a screenshot of a batch ingestion of the aggregation
+    # write output stream
     query = agg_df \
         .writeStream \
         .format("console") \
@@ -85,7 +85,7 @@ def run_spark_job(spark):
     # rename disposition_code column to disposition
     radio_code_df = radio_code_df.withColumnRenamed("disposition_code", "disposition")
 
-    # TODO join on disposition column
+    # join on disposition column
     join_query = agg_df \
         .join(radio_code_df, "disposition") \
         .writeStream \

@@ -35,7 +35,7 @@ For Python libraries, refer to requirement.txt.
 *** Note that 2.4.4 is the version of spark installed.
 
 
-## Q&A from Udacity Data Streaming Nanodegree Exam
+## Q&A from Udacity Data Streaming Nanodegree
 
 #### 1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
 

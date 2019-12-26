@@ -1,5 +1,5 @@
 # SF Crime Statistics using Kafka and Spark Streaming
-As part of Udacity Data Streaming nanodegree, this project demonstrates how Kafka producer produce messages into the Kafka topic and how we integrate Kafka with Spark streaming.
+As part of Udacity Data Streaming nanodegree, this project demonstrates how Kafka producer produces messages into the Kafka topic and how we integrate Kafka with Spark streaming based on Kaggle open data, [SF Police Calls for Service and Incidents](https://www.kaggle.com/san-francisco/sf-police-calls-for-service-and-incidents).
 
 ## Environment
 - Java JDK 1.8

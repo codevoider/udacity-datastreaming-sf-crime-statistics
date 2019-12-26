@@ -32,6 +32,7 @@ For Python libraries, refer to requirement.txt.
 #### 5. Submit spark job.
 
 `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.4 --master local[*] data_stream.py`
+
 *** Note that 2.4.4 is the version of spark installed.
 
 

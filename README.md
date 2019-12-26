@@ -1,5 +1,5 @@
 # SF Crime Statistics using Kafka and Spark Streaming
-as part of Udacity Data Streaming nanodegree
+As part of Udacity Data Streaming nanodegree, this application demonstrates how Kafka producer produce messages into the Kafka topic and how we integrate Kafka with Spark streaming.
 
 ## Environment
 - Java JDK 1.8

@@ -11,7 +11,7 @@ as part of Udacity Data Streaming nanodegree
 For Python libraries, refer to requirement.txt.
 
 ## How to run the application
-*** Note that the data source files are required to run this repository.
+*** Note that the data source files are required to run this repository.  Follow this data source download [link](https://drive.google.com/file/d/1FqsGfUiczZkGUCqzo8otwKLcIa9n--3-/view?usp=sharing), and unzip into the root folder.
 
 #### 1. Start Zookeeper.
 
